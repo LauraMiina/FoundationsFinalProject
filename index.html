@@ -41,20 +41,18 @@
         <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 <body>
+    <div class="container">
+        <h1>🔥 World Temperature Anomaly 🔥</h1>
+        <h3>See how the world is slowly boiling</h3>
+        <p>The chart below auto-updates every day. Temperature is from <a href="https://climatereanalyzer.org/clim/t2_daily/?dm_id=world">Climate Reanalyzer Daily Surface Air Temperature</a>.</p>
     <div id="vis"></div>          
         <script type="text/javascript">
             var spec = "chart.json";
             vegaEmbed('#vis', spec)
         </script>
-    <div class="container">
-        <h1>🔥 World Temperature Anomaly 🔥</h1>
-        <h3>See how the world is slowly boiling</h3>
-        <p>The chart below auto-updates every day. Temperature is from <a href="https://climatereanalyzer.org/clim/t2_daily/?dm_id=world">Climate Reanalyzer Daily Surface Air Temperature</a>.</p>
-        <div class="graphic" id="vis">
-            <iframe src="final_chart_temperature" width="800" height="600"></iframe>
-        </div>
     </div>
     <div id="footer">
         <p>This website was made with the help of a tutorial on <a href="https://jonathansoma.com">auto-updating websites</a>.</p>
     </div>
+</body>
 </html>
